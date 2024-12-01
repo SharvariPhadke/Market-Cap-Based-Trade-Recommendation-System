@@ -1,2 +1,2 @@
-# Market-Cap-Based-Trade-Recommendation-System
+# StockTalk
 Designing and developing a trade recommendation system based on small/mid/large market cap.

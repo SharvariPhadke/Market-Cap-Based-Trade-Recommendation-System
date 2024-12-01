@@ -1,0 +1,53 @@
+&nbsp;
+<!-- Dropdown -->
+<div class="dropdown">
+  <h2 id="dropdownheading" style="color: white">Choose Market Cap</h2>
+  <div class="box">
+    <!-- <h4>Please choose market cap</h4> -->
+    <!-- <label>Stock Options</label>  -->
+    <select
+      id="selectid"
+      class="form-control-mb-12"
+      (change)="marketCapOptions($any($event.target).value)"
+    >
+      <!-- <option value="">Please Choose Cap</option> -->
+      <option value="Large Cap">Large Cap</option>
+      <option value="Mid Cap">Mid Cap</option>
+      <option value="Small Cap">Small Cap</option>
+    </select>
+  </div>
+</div>
+
+<div
+  class="table-responsive table mt-2"
+  id="dataTable"
+  role="grid"
+  aria-describedby="dataTable_info"
+>
+  <table class="table .table-dark table-sm" id="dataTable">
+    <thead>
+      <tr>
+        <th id="symbol">Stock Symbol</th>
+        <th id="currPrice">Current Price</th>
+        <th id="close2WeeksAgo">Close Two Weeks Ago</th>
+        <th id="changePercent">Change Percent</th>
+        <th id="quantitySaved">Quantity Saved</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="stocks != null">
+      <tr *ngFor="let stock of stocks">
+        <td>{{ stock.symbol }}</td>
+        <td>{{ stock.currPrice }}</td>
+        <td>{{ stock.close2WeeksAgo }}</td>
+        <td>{{ stock.changePercent }}</td>
+        <td><input type="number" (keyup)="onKey($event)" /></td>
+        <td>
+          <button class="btn btn-primary" (click)="saveStock(stock)">
+            Save
+          </button>
+        </td>
+        <!-- <td *ngIf="saved">Saved</td> -->
+      </tr>
+    </tbody>
+  </table>
+</div>

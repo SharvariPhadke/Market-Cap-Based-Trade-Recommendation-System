@@ -1,0 +1,135 @@
+/* Get saved stocks button */
+#getsavedstocks {
+    margin: 40px 10px 40px 50px;
+}
+
+div .btn-getsavedstocks {
+    appearance: none;
+    background-color: #FFFFFF;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #ADCFFF 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+div .btn-getsavedstocks:hover {
+    background-color: #FFC229;
+    box-shadow: #FF6314 0 -6px 8px inset;
+    transform: scale(1.125);
+}
+
+div .btn-getsavedstocks:active {
+    transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+    .btn-getsavedstocks {
+        font-size: 1.5rem;
+        padding: .75rem 2rem;
+    }
+}
+/* Get saved stocks button */
+
+
+/* sortable header directive */
+th[sortable] {
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+th[sortable].desc:before,
+th[sortable].asc:before {
+    content: "";
+    display: block;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAmxJREFUeAHtmksrRVEUx72fH8CIGQNJkpGUUmakDEiZSJRIZsRQmCkTJRmZmJgQE0kpX0D5DJKJgff7v+ru2u3O3vvc67TOvsdatdrnnP1Y///v7HvvubdbUiIhBISAEBACQkAICAEhIAQ4CXSh2DnyDfmCPEG2Iv9F9MPlM/LHyAecdyMzHYNwR3fdNK/OH9HXl1UCozD24TCvILxizEDWIEzA0FcM8woCgRrJCoS5PIwrANQSMAJX1LEI9bqpQo4JYNFFKRSvIgsxHDVnqZgIkPnNBM0rIGtYk9YOOsqgbgepRCfdbmFtqhFkVEDVPjJp0+Z6e6hRHhqBKgg6ZDCvYBygVmUoEGoh5JTRvIJwhJo1aUOoh4CLPMyvxxi7EWOMgnCGsXXI1GIXlZUYX7ucU+kbR8NW8lh3O7cue0Pk32MKndfUxQFAwxdirk3fHappAnc0oqDPzDfGTBrCfHP04dM4oTV8cxr0SVzH9FF07xD3ib6xCDE+M+aUcVygtWzzbtGX2rPBrEUYfecfQkaFzYi6HjVnGBdtL7epqAlc1+jRdAap74RrnPc4BCijttY2tRcdN0g17w7HqZrXhdJTYAuS3hd8z+vKgK3V1zWPae0mZDMykadBn1hTQBLnZNwVrJpSe/NwEeDsEwCctEOsJTsgxLvCqUl2ACftEGvJDgjxrnBqkh3ASTvEWrIDQrwrnJpkB3DSDrGW7IAQ7wqnJtkBnLRztejXXVu4+mxz/nQ9jR1w5VB86ejLTFcnnDwhzV+F6T+CHZlx6THSjn76eyyBIOPHyDakhBAQAkJACAgBISAEhIAQYCLwC8JxpAmsEGt6AAAAAElFTkSuQmCC") no-repeat;
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-left: -10px;
+    margin-top: 4px;
+}
+
+th[sortable].desc:before {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+/* sortable header directive */
+
+
+/* Table design */
+#dataTable {
+    /* color: black; */
+    color: white;
+    /* background-color: orange; */
+}
+
+th {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 65px;
+    padding-right: 40px;
+}
+
+td {
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+    padding-left: 90px;
+    padding-right: 40px;
+}
+
+#symbol:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#currPrice:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#close2WeeksAgo:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#changePercent:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#quantitySaved:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#username:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#deleteStock {
+    background-color: red;
+}
+/* Table design */
+
+
